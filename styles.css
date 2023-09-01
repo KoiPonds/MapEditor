@@ -1,0 +1,57 @@
+/* styles.css */
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 32px);
+    justify-content: center;
+    gap: 2px;
+}
+
+.tile {
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.tilesheet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white; /* You can adjust the background color as needed */
+    z-index: 1; /* Ensure it's displayed above other content */
+    width: 100%;
+    max-height: 200px; /* Set a maximum height for the tilesheet */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional padding for spacing */
+    /* Add any other necessary styles for your tilesheet */
+}
+
+.tile.selected {
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+.map-grid {
+    margin-top: 220px; /* Adjust the margin to ensure space below the tilesheet */
+    display: grid;
+    grid-template-columns: repeat(100, 32px);
+    border: 1px solid black;
+}
+
+/* Additional styles for the map grid */
+.map-grid .map-tile {
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(200, 32px);
+    border: 1px solid black;
+}
+
+.tile-placed {
+    background-color: lightgray;
+}

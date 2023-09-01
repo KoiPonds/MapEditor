@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <input type="file" id="fileInput">
+    <div class="tilesheet">
+        <div class="tiles" id="tilesContainer"></div>
+    </div>
+    
+    <div class="map" id="mapContainer"></div>
+
+    <div class="map-grid" id="playerMapContainer"></div>
+    <label for="mapSize">Map Size:</label>
+    <input type="number" id="mapSize" min="1" value="100">
+    <button id="resizeMapButton">Resize Map</button>
+    <button id="clearMapButton">Clear Map</button>
+    <button id="undoButton">Undo</button>
+    <button id="fillButton">Fill</button>
+    <button id="saveButton">Save Map</button>
+    <script src="script.js"></script>
+</body>
+</html>
